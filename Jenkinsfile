@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
 
-               sh 'dotnet msbuild -h' $(MASU)
+               sh 'dotnet msbuild -h'
                   
             }
         }
