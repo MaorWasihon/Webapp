@@ -3,6 +3,8 @@
 pipeline {
     agent any
 
+    
+    
     stages {
         stage('Build') {
 
@@ -11,8 +13,15 @@ pipeline {
                 sh 'dotnet build'        
             
             }
-        }
+        }//build
         
-     }
+        stage('deploy'){ 
+        
+            def resourceGroup = 'maor'
+        
+        }//deploy
+        
+        
+     }//stages
     
-}
+}//pipeline
