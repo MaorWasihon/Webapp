@@ -1,5 +1,6 @@
 
-
+  def resourceGroup = 'maor'
+        
 pipeline {
     agent any
 
@@ -17,8 +18,7 @@ pipeline {
         
         stage('deploy'){ 
         
-            def resourceGroup = 'maor'
-        
+          sh 'echo resourceGroup'
         }//deploy
         
         
