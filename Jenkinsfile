@@ -5,9 +5,22 @@ pipeline {
 
     stages {
         stage('Build') {
+            script{
+                
+                env.Moar = "maor wasihon"
+            }
             steps {
 
-                sh 'dotnet msbuild -h' > ${Moar}
+                sh 'dotnet build' 
+                sh '$env.Maor'
+                  
+            }
+        }
+        
+        stage('deploy') {
+            steps {
+
+                
                   
             }
         }
