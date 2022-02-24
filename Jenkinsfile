@@ -1,11 +1,11 @@
-
-  def resourceGroup = 'maor'
         
 pipeline {
     agent any
-
-    
-    
+ 
+  
+    environment {
+        MAOR = "maor"
+    }
     stages {
         stage('Build') {
 
@@ -18,7 +18,8 @@ pipeline {
         
         stage('deploy'){ 
         
-          sh 'echo resourceGroup'
+          sh 'echo ${MAOR}'
+          
         }//deploy
         
         
