@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
 
-               sh 'echo hello muthafucka'
+               sh 'sudo i'
                   
             }
         }
