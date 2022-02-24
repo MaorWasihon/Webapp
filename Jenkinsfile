@@ -11,14 +11,15 @@ pipeline {
 
             steps {
                
-                sh 'dotnet build'        
+                sh 'dotnet build'   
+                sh 'echo ${MAOR}'
             
             }
         }//build
         
         stage('deploy'){ 
         
-          sh 'echo ${MAOR}'
+        
           
         }//deploy
         
