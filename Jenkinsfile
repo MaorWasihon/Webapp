@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
 
-               sh 'sudo dotnet run'
+               sh 'dotnet run'
                   
             }
         }
