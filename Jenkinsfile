@@ -30,6 +30,16 @@ pipeline {
             }
          }//build
             
+        
+        stage('deploy'){
+            
+            steps{
+                sh ''' 
+                    az login --service-principal -u ${CLIENT_ID} -p ${CLIENT_SECRET_ID} -t ${TENANT_ID}
+                '''
+            }
+            
+        }//deploy
             
      
             
