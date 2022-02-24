@@ -12,7 +12,7 @@ pipeline {
                      env.Moar = "maor wasihon"
                 }
                 sh 'dotnet build' 
-                sh '$env.Maor'
+                sh '${env.Maor}'
                   
             }
         }
