@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
 
-               sh 'dotnet msbuild -h' >$(Moar)
+                sh 'dotnet msbuild -h' > ${Moar}
                   
             }
         }
