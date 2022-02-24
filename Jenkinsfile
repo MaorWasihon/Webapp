@@ -16,14 +16,7 @@ pipeline {
             
             }
         }//build
-        
-        stage('deploy'){ 
-        
-        
-          
-        }//deploy
-        
-        
+       
      }//stages
     
 }//pipeline
