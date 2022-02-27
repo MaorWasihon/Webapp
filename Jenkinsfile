@@ -7,7 +7,10 @@ pipeline {
         stage('Build') {
             steps {
 
-               sh 'dotnet build'
+               sh '''
+                    dotnet build -c Release
+                    dotnet publish -c Release --no-build
+                  '''
                   
             }
         }
